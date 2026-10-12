@@ -1,9 +1,28 @@
 {
-  "_comment": "Sites the monitor always checks. Every site listed in https://smidge.page/sites.json is checked too, automatically.",
+  "_comment": "Sites the monitor always checks. Every site listed in https://smidge.page/sites.json is checked too, automatically. Sites without a health.json are checked by their homepage (no \"expect\").",
   "always": [
-    { "name": "smidge.page (hub)", "url": "https://smidge.page/health.json", "expect": "\"ok\"" },
-    { "name": "tms", "url": "https://tms.smidge.page/health.json", "expect": "\"ok\"" },
-    { "name": "LeaseParser", "url": "https://leaseparser.com/" }
+    {
+      "name": "smidge.page (hub)",
+      "url": "https://smidge.page/health.json",
+      "expect": "\"ok\""
+    },
+    {
+      "name": "tms",
+      "url": "https://tms.smidge.page/health.json",
+      "expect": "\"ok\""
+    },
+    {
+      "name": "LeaseParser",
+      "url": "https://leaseparser.com/"
+    },
+    {
+      "name": "Uptown Property Management",
+      "url": "https://rentwithuptown.com/"
+    },
+    {
+      "name": "Taleworthy",
+      "url": "https://taleworthy.app/"
+    }
   ],
   "directory": "https://smidge.page/sites.json"
 }
