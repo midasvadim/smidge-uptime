@@ -1,0 +1,52 @@
+{
+  "sites": {
+    "https://smidge.page/health.json": {
+      "name": "smidge.page (hub)",
+      "expect": "\"ok\"",
+      "up": true,
+      "since": "2026-10-12T15:05:11.198Z"
+    },
+    "https://tms.smidge.page/health.json": {
+      "name": "tms",
+      "expect": "\"ok\"",
+      "up": true,
+      "since": "2026-10-12T15:05:11.198Z"
+    },
+    "https://leaseparser.com/": {
+      "name": "LeaseParser",
+      "up": true,
+      "since": "2026-10-12T15:05:11.198Z"
+    },
+    "https://countingeternity.smidge.page/health.json": {
+      "name": "Counting Eternity",
+      "expect": "\"ok\"",
+      "up": true,
+      "since": "2026-10-12T15:05:11.198Z"
+    },
+    "https://wisdomofcrowds.smidge.page/health.json": {
+      "name": "Wisdom of Crowds",
+      "expect": "\"ok\"",
+      "up": true,
+      "since": "2026-10-12T15:05:11.198Z"
+    },
+    "https://electionsystems.smidge.page/health.json": {
+      "name": "How Election Systems Pick a Winner",
+      "expect": "\"ok\"",
+      "up": true,
+      "since": "2026-10-12T15:05:11.198Z"
+    },
+    "https://wouldyourather.smidge.page/health.json": {
+      "name": "Would You Rather? The Money Edition",
+      "expect": "\"ok\"",
+      "up": true,
+      "since": "2026-10-12T15:05:11.198Z"
+    },
+    "https://toplinks.smidge.page/health.json": {
+      "name": "Top Links",
+      "expect": "\"ok\"",
+      "up": true,
+      "since": "2026-10-12T15:05:11.198Z"
+    }
+  },
+  "heartbeat": "2026-10-12"
+}
