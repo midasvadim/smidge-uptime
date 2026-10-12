@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: "*/5 * * * *"   # GitHub may run these a few minutes late under load.
   workflow_dispatch:
+    inputs:
+      test_alert:
+        description: "Also send a test notification"
+        type: boolean
+        default: false
   push:
     branches: [main]
     paths: ["check.mjs", "targets.json", ".github/workflows/uptime.yml"]
@@ -32,6 +37,7 @@ jobs:
         env:
           ALERT_URL: ${{ secrets.ALERT_URL }}
           ALERT_TOKEN: ${{ secrets.ALERT_TOKEN }}
+          TEST_ALERT: ${{ inputs.test_alert }}
 
       - name: Save state
         run: |

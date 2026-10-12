@@ -20,4 +20,4 @@ The repo is public so GitHub Actions minutes are free; the secrets stay private.
 
 ## Run it by hand
 
-**Actions → Uptime → Run workflow**, or locally: `ALERT_URL=… node check.mjs`.
+**Actions → Uptime → Run workflow**. Tick **Also send a test notification** to check that alerts reach your phone. Locally: `ALERT_URL=… node check.mjs`.

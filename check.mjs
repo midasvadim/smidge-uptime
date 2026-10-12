@@ -89,6 +89,12 @@ async function send(title, text, down) {
   if (!res.ok) console.log(`::warning::Alert failed (${res.status}): ${(await res.text()).slice(0, 200)}`);
 }
 
+// Manual run with "Also send a test notification" ticked.
+if (process.env.TEST_ALERT === "true") {
+  if (!String(process.env.ALERT_URL || "").trim()) console.log("::error::ALERT_URL secret is missing, so no alerts can be sent.");
+  else await notify("Uptime monitor test", "Alerts from the GitHub uptime monitor are working.", false);
+}
+
 const list = await targets();
 const results = await Promise.all(list.map(async (t) => ({ t, r: await check(t) })));
 let changed = false;
