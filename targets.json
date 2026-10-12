@@ -1,0 +1,9 @@
+{
+  "_comment": "Sites the monitor always checks. Every site listed in https://smidge.page/sites.json is checked too, automatically.",
+  "always": [
+    { "name": "smidge.page (hub)", "url": "https://smidge.page/health.json", "expect": "\"ok\"" },
+    { "name": "tms", "url": "https://tms.smidge.page/health.json", "expect": "\"ok\"" },
+    { "name": "LeaseParser", "url": "https://leaseparser.com/" }
+  ],
+  "directory": "https://smidge.page/sites.json"
+}

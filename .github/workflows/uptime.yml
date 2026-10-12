@@ -1,0 +1,41 @@
+name: Uptime
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"   # GitHub may run these a few minutes late under load.
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["check.mjs", "targets.json", ".github/workflows/uptime.yml"]
+
+# One check at a time; a late run never overlaps the next.
+concurrency:
+  group: uptime
+  cancel-in-progress: false
+
+permissions:
+  contents: write   # to commit state.json when a site changes state
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+
+      - name: Check sites
+        run: node check.mjs
+        env:
+          ALERT_URL: ${{ secrets.ALERT_URL }}
+          ALERT_TOKEN: ${{ secrets.ALERT_TOKEN }}
+
+      - name: Save state
+        run: |
+          git add -A state.json STATUS.md
+          if git diff --cached --quiet; then exit 0; fi
+          git -c user.name="smidge-uptime" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" commit -q -m "Status update"
+          git pull -q --rebase origin main && git push -q origin main
