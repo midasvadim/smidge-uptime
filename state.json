@@ -46,6 +46,16 @@
       "expect": "\"ok\"",
       "up": true,
       "since": "2026-10-12T15:05:11.198Z"
+    },
+    "https://rentwithuptown.com/": {
+      "name": "Uptown Property Management",
+      "up": true,
+      "since": "2026-10-12T15:11:47.187Z"
+    },
+    "https://taleworthy.app/": {
+      "name": "Taleworthy",
+      "up": true,
+      "since": "2026-10-12T15:11:47.187Z"
     }
   },
   "heartbeat": "2026-10-12"
