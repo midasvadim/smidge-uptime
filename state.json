@@ -56,6 +56,12 @@
       "name": "Taleworthy",
       "up": true,
       "since": "2026-10-12T15:11:47.187Z"
+    },
+    "https://pirateattack.smidge.page/health.json": {
+      "name": "Pirate Attack",
+      "expect": "\"ok\"",
+      "up": true,
+      "since": "2026-10-14T19:30:12.195Z"
     }
   },
   "heartbeat": "2026-10-14"
