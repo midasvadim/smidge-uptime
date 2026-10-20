@@ -13,5 +13,6 @@ Checked every 5 minutes from GitHub Actions (outside Cloudflare). Updated when s
 | 🟢 Up | [tms](https://tms.smidge.page/) | 2026-10-12 15:05 UTC |
 | 🟢 Up | [Top Links](https://toplinks.smidge.page/) | 2026-10-12 15:05 UTC |
 | 🟢 Up | [Uptown Property Management](https://rentwithuptown.com/) | 2026-10-12 15:11 UTC |
+| 🟢 Up | [Vocab Quiz](https://vocabquiz.smidge.page/) | 2026-10-20 05:11 UTC |
 | 🟢 Up | [Wisdom of Crowds](https://wisdomofcrowds.smidge.page/) | 2026-10-12 15:05 UTC |
 | 🟢 Up | [Would You Rather? The Money Edition](https://wouldyourather.smidge.page/) | 2026-10-12 15:05 UTC |

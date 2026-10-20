@@ -62,6 +62,12 @@
       "expect": "\"ok\"",
       "up": true,
       "since": "2026-10-14T19:30:12.195Z"
+    },
+    "https://vocabquiz.smidge.page/health.json": {
+      "name": "Vocab Quiz",
+      "expect": "\"ok\"",
+      "up": true,
+      "since": "2026-10-20T05:11:22.238Z"
     }
   },
   "heartbeat": "2026-10-20"
