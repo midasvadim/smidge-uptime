@@ -14,9 +14,8 @@
     },
     "https://leaseparser.com/": {
       "name": "LeaseParser",
-      "up": false,
-      "since": "2026-10-31T17:30:51.398Z",
-      "reason": "HTTP 503"
+      "up": true,
+      "since": "2026-11-01T09:38:46.072Z"
     },
     "https://countingeternity.smidge.page/health.json": {
       "name": "Counting Eternity",
