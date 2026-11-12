@@ -9,6 +9,7 @@ Checked every 5 minutes from GitHub Actions (outside Cloudflare). Updated when s
 | 🟢 Up | [LeaseParser](https://leaseparser.com/) | 2026-11-01 09:38 UTC |
 | 🟢 Up | [Pirate Attack](https://pirateattack.smidge.page/) | 2026-10-14 19:30 UTC |
 | 🟢 Up | [smidge.page (hub)](https://smidge.page/) | 2026-10-12 15:05 UTC |
+| 🟢 Up | [Study Guide](https://studyguide.smidge.page/) | 2026-11-12 04:09 UTC |
 | 🟢 Up | [Taleworthy](https://taleworthy.app/) | 2026-10-12 15:11 UTC |
 | 🟢 Up | [tms](https://tms.smidge.page/) | 2026-10-12 15:05 UTC |
 | 🟢 Up | [Top Links](https://toplinks.smidge.page/) | 2026-10-12 15:05 UTC |
